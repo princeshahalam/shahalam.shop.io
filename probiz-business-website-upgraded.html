@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProBiz - Elevate Your Business</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth fade-up animation for sections */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-20">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#" class="text-2xl font-bold text-indigo-600 hover:text-indigo-700">ProBiz</a>
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <li><a href="#services" class="hover:text-indigo-600 transition">Services</a></li>
+        <li><a href="#about" class="hover:text-indigo-600 transition">About</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-32 pt-36 text-center">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">Elevate Your Business to New Heights</h1>
+      <p class="text-xl md:text-2xl mb-8 drop-shadow-md">Innovative solutions crafted for your success</p>
+      <a href="#contact" class="inline-block bg-white text-indigo-700 font-semibold px-10 py-3 rounded-full shadow-lg hover:bg-indigo-100 transition">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container mx-auto px-6 py-20 max-w-6xl">
+    <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition cursor-pointer fade-up">
+        <div class="text-indigo-600 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v4a1 1 0 001 1h3m10 0h3a1 1 0 001-1V7M7 17h10M5 10v4a2 2 0 002 2h8a2 2 0 002-2v-4"/></svg>
+        </div>
+        <h3 class="text-2xl font-semibold mb-3 text-center">Web Development</h3>
+        <p class="text-gray-600 text-center">Fast, responsive, and modern websites tailored for your brand.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition cursor-pointer fade-up">
+        <div class="text-indigo-600 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="text-2xl font-semibold mb-3 text-center">Digital Marketing</h3>
+        <p class="text-gray-600 text-center">Increase your reach and boost sales with effective marketing strategies.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition cursor-pointer fade-up">
+        <div class="text-indigo-600 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 00-8 0v2m16 0v-2a4 4 0 00-8 0v2m8 0v2a2 2 0 01-2 2H9a2 2 0 01-2-2v-2"/></svg>
+        </div>
+        <h3 class="text-2xl font-semibold mb-3 text-center">Business Consulting</h3>
+        <p class="text-gray-600 text-center">Strategic planning and expert advice to grow your business efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white py-20">
+    <div class="container mx-auto px-6 max-w-4xl text-center fade-up">
+      <h2 class="text-4xl font-bold mb-6">About Us</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">At ProBiz, we specialize in delivering customized solutions that empower businesses to thrive in a competitive landscape. Our experienced team works closely with you to unlock your brand’s full potential through innovative strategies and technology.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-indigo-600 py-20 text-white">
+    <div class="container mx-auto px-6 max-w-xl">
+      <h2 class="text-4xl font-bold mb-8 text-center">Get In Touch</h2>
+      <form action="https://formsubmit.io/send/your-email@example.com" method="POST" class="space-y-6">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 rounded-md text-gray-900" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 rounded-md text-gray-900" />
+        <textarea name="message" placeholder="Your Message" rows="5" required class="w-full p-4 rounded-md text-gray-900"></textarea>
+        <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 transition py-4 rounded-md font-semibold">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+    <p>&copy; 2025 ProBiz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Animate fade-up sections on scroll
+    const faders = document.querySelectorAll('.fade-up');
+    const appearOptions = { threshold: 0.2, rootMargin: '0px 0px -50px 0px' };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+  </script>
+
+</body>
+</html>
